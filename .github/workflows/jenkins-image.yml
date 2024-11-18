@@ -1,0 +1,25 @@
+name: Jenkins Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      env:
+         USER: ${{ secrets.USER }}
+         PASS: ${{ secrets.PASS }}
+      run: |
+         docker build . --file Dockerfile --tag taseng9/cloudexam:ver1
+         docker login -u $USER -p $PASS
+         
+         docker push taseng9/cloudexam:ver1

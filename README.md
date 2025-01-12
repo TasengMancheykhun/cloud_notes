@@ -36,3 +36,12 @@
 
 * Difference between 'docker exec' and 'docker attach' 
   * docker exec creates a new process inside the container and allows to interact with it, while docker attach connects to the container's existing main process
+
+* How to specify the interactive mode and terminal for the 'docker exec' command
+  * Using -it option. This enables interactive mode and allocate a pseudo -TTY, allowing us to interact with the container's shell
+
+* How to run a command inside a running Docker container without opening an interactive shell
+  * 'docker exec -d container_id command' runs a specified command inside a running Docker conatiner in detached mode, without opening an interactive shell
+
+* Which Docker command is used to copy files from the host system to a running container
+  * docker cp command is used to copy files or directories from the host system to a running container or vice versa

@@ -45,3 +45,19 @@
 
 * Which Docker command is used to copy files from the host system to a running container
   * docker cp command is used to copy files or directories from the host system to a running container or vice versa
+
+
+
+
+
+
+
+* Intro to AI and Open-Vino
+  * Types of Agents:
+    * Simple Reflex Agent
+    * Model-based Reflex Agent
+    * Goal-based Reflex Agent
+    * Utility-based Agent
+    * Learning Agent
+
+   

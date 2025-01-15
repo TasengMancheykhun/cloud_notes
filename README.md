@@ -60,4 +60,11 @@
     * Utility-based Agent
     * Learning Agent
 
+
+
+
+* Linux Notes
+  * Linux Kernel: 
+    * Linux Kernel is the core component of the operating system that manages system resources, hardware communication, and system calls from user applications.
+
    

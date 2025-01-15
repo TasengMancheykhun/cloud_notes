@@ -67,4 +67,5 @@
   * Linux Kernel: 
     * Linux Kernel is the core component of the operating system that manages system resources, hardware communication, and system calls from user applications.
 
-   
+  * uname -r 
+    * command used to display the Linux kernel running on your system 

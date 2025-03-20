@@ -17,12 +17,14 @@
 
 * docker run 
   * command used to create and start a new container from a specified Docker image
+  * Eg. `docker run nginx` runs an instance of the nginx application on the host if the image is present in the host. If it is not present in the host, it will go to docker hub and pull the imae down.
 
 *  Option to use with 'docker run' to run a container in the background (detached mode)
   * -d 
 
 * docker start
   * command used to restart an existing, stopped Docker container
+   
 
 * docker run --name custom_name
   * command to specify a custom name for a container when starting it.

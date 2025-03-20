@@ -10,14 +10,54 @@
   * used to start Docker service on a linux system after installation
 
 * usermod -aG docker $USER 
-  * This command adds user to the DOcker group , allowing the user to run Docker commands without sudo
+  * This command adds user to the Docker group , allowing the user to run Docker commands without sudo
 
 * /etc/docker/daemon.json
   * default Docker configuration file located on a Linux system
 
-* docker run 
+**DOCKER BASIC COMMANDS**
+
+* `docker run <image name>` 
   * command used to create and start a new container from a specified Docker image
-  * Eg. `docker run nginx` runs an instance of the nginx application on the host if the image is present in the host. If it is not present in the host, it will go to docker hub and pull the imae down.
+  * Eg. `docker run nginx` runs an instance of the nginx application on the host if the image is present in the host. If it is not present in the host, it will go to docker hub and pull the image.
+  * Each container automatically get a random ID and name created by Docker like 'silly_sammet'
+
+* `docker ps`
+  * Lists all running containers and displays their basic information like `container id, image name which is used to run the containers, current running status & name of the container`.
+
+* `docker ps -a`
+  * Lists all containers running as well as previously stopped (or) exited containers.
+
+* `docker stop <container ID>` 
+  * Stops a running container. Can put container ID or Name.
+
+* `docker rm <container name>`
+  * Remove a stopped container permanently.
+  * Verify using `docker ps -a` and see that it is no longer present in the list.
+
+* `docker images`
+  * Lists all available images, with informations like `image ID, date created & Sizes`.
+
+* `docker rmi <image name>`
+  * Removes the image
+  * Remember that no containers of that image should be running when you are removing the image.
+
+* `docker pull <image name>`
+  * Pulls the image and stores it in the host
+
+* `docker run ubuntu sleep 5`
+  * Runs ubuntu container for 5 seconds
+* `docker exec <container name> cat /etc/hosts`
+  * This prints the contents of the /etc/hosts file.
+
+*  
+
+
+
+
+
+
+
 
 *  Option to use with 'docker run' to run a container in the background (detached mode)
   * -d 

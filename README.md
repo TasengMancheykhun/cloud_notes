@@ -50,7 +50,11 @@
 * `docker exec <container name> cat /etc/hosts`
   * This prints the contents of the /etc/hosts file.
 
-*  
+* `docker run -d <image name>`
+  * run a container in the background (detached mode)
+* `docker attach <container ID>`
+  * Attach back the container 
+    
 
 
 
@@ -59,8 +63,7 @@
 
 
 
-*  Option to use with 'docker run' to run a container in the background (detached mode)
-  * -d 
+
 
 * docker start
   * command used to restart an existing, stopped Docker container

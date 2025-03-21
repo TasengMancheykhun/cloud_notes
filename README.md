@@ -53,7 +53,11 @@
 * `docker run -d <image name>`
   * run a container in the background (detached mode)
 * `docker attach <container ID>`
-  * Attach back the container 
+  * Attach back the container
+
+* `docker run -d --name <custom name> <image>`
+  * Running a container with the image and naming it with custom name    
+
     
 
 

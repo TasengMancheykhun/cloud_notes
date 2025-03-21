@@ -58,7 +58,8 @@
 * `docker run -d --name <custom name> <image>`
   * Running a container with the image and naming it with custom name    
 
-    
+* `docker images -aq`
+  * Lists the container ID of all images     
 
 
 

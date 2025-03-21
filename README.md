@@ -64,7 +64,8 @@
 **DOCKER RUN OPTIONS**
 
 * `docker run -it <image>`
-  * Creates and runs the container of the image in Interactive mode, meaning it can prompt as well as take input from user 
+  * Creates and runs the container of the image in Interactive mode, meaning it can prompt as well as take input from user
+*  
 
 
 

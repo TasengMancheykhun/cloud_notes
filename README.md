@@ -65,7 +65,12 @@
 
 * `docker run -it <image>`
   * Creates and runs the container of the image in Interactive mode, meaning it can prompt as well as take input from user
-*  
+
+* `docker run -p 38282:8080` kodekloud/simple-webapp:blue`
+  * Running an instance of `kodekloud/simple-webapp` with a tag `blue` and map port `8080` on the container to 38282 on the host
+
+
+  
 
 
 

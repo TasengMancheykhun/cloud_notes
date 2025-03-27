@@ -69,6 +69,23 @@
 * `docker run -p 38282:8080` kodekloud/simple-webapp:blue`
   * Running an instance of `kodekloud/simple-webapp` with a tag `blue` and map port `8080` on the container to 38282 on the host
 
+**DOCKER FILE AND DOCKER IMAGES**
+* Dockerfile
+  </br>
+  `FROM python:3.6` </br>
+  `RUN pip install flask` </br>
+  `COPY . /opt/` </br>
+  `EXPOSE 8080` </br>
+  `WORKDIR /opt` </br>
+  `ENTRYPOINT ["python", "app.py"]` </br>
+
+* `docker build -t webapp-color .`
+   * Build a docker image using the Dockerfile and name it webapp-color
+
+* `docker run -p 8282:8080 webapp-color`
+   * Run an instance of the image `webapp-color` and publish port `8080` on the container to `8282` on the host
+ 
+* 
 
   
 

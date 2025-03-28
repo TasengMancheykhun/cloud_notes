@@ -126,7 +126,7 @@
 
 
 
-
+**INTRO TO AI**
 
 * Intro to AI and Open-Vino
   * Types of Agents:

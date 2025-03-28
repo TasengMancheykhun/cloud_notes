@@ -61,7 +61,7 @@
 * `docker images -aq`
   * Lists the container ID of all images     
 
-**DOCKER RUN OPTIONS**
+**DOCKER RUN**
 
 * `docker run -it <image>`
   * Creates and runs the container of the image in Interactive mode, meaning it can prompt as well as take input from user
@@ -85,8 +85,8 @@
 * `docker run -p 8282:8080 webapp-color`
    * Run an instance of the image `webapp-color` and publish port `8080` on the container to `8282` on the host
  
-* 
-
+**DOCKER CMD vs ENTRYPOINT**
+* Unlike Virtual machines, containers are not meant to host an operating system. Containers are meant to run a specific task or process such as to host an instance of a webserver, or application server, or a database, or simply to carry out some computation or analysis task. Once the task is complete, the container exits. A container only lives as long as the process inside it is alive. If the web service inside it is stopped or crashes, the container exits. There are ways to define what process runs within a container. 
   
 
 
@@ -95,11 +95,10 @@
 
 
 
-
+**QUICK QUIZ ON DOCKER**
 * docker start
   * command used to restart an existing, stopped Docker container
    
-
 * docker run --name custom_name
   * command to specify a custom name for a container when starting it.
 
